@@ -1,6 +1,6 @@
 import "./NavFuture.css";
 import { useEffect, useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // get our fontawesome imports
 import "@fortawesome/free-solid-svg-icons";
 
@@ -11,6 +11,8 @@ function App() {
       document.getElementById("wrapperbody").dataset.nav === "true"
         ? "false"
         : "true";
+    document.getElementById("test").dataset.nav =
+      document.getElementById("test").dataset.nav === "true" ? "false" : "true";
   };
   useEffect(() => {
     const menu = document.getElementById("menu");
@@ -28,30 +30,38 @@ function App() {
       <div id="wrapperbody">
         <div id="menu">
           <div id="menu-items">
-            <Link to="/">
+            {" "}
+            <div className="menu-item">
               {" "}
-              <div className="menu-item">Home</div>
-            </Link>
-            <Link to="/free">
+              <Link to="/" style={{ color: "white" }} onClick={toggleNav}>
+                Home{" "}
+              </Link>
+            </div>{" "}
+            <div className="menu-item">
               {" "}
-              <div className="menu-item">Tools</div>
-            </Link>
-            <Link to="/Page1">
+              <Link to="/free" style={{ color: "white" }} onClick={toggleNav}>
+                Tools{" "}
+              </Link>
+            </div>
+            <div className="menu-item">
               {" "}
-              <div className="menu-item">Music</div>
-            </Link>
-
+              <Link to="/free" style={{ color: "white" }} onClick={toggleNav}>
+                Music
+              </Link>
+            </div>
             <div className="menu-item"> Links</div>
           </div>
 
           <div id="menu-background-pattern"></div>
           <div id="menu-background-image"></div>
         </div>
-      </div>{" "}
-      <button id="nav-toggle" type="button" onClick={toggleNav}>
-        <i className="open fa fa-car"></i>
-        <i className="close fa fa-book"></i>
-      </button>
+      </div>
+      <div id="test">
+        <button id="nav-toggle" type="button" onClick={toggleNav}>
+          <i className="open fa fa-close"></i>{" "}
+          <i className="close fa fa-bars"></i>
+        </button>
+      </div>
     </>
   );
 }
