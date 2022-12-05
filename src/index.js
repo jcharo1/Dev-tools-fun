@@ -13,7 +13,7 @@ root.render(
       <NavFuture />
       <Routes>
         <Route path="/" exact element={<App />} />
-        <Route path="/free" exact element={<Freetiles />} />
+        <Route path="/free1" exact element={<Page1 />} />
 
         <Route path="/Page1" exact element={<Page1 />} />
       </Routes>

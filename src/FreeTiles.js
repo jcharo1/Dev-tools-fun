@@ -6,15 +6,13 @@ function Freetiles() {
 
   return (
     <>
-      {" "}
-      <div class="container">
-        <div class="glitch" data-text="ELISABÉTH">
-          ELISABÉTH
+      {/* <div class="glitch" data-text="Justin Charo">
+          Justin Charo
         </div>
-        <div class="glow">ELISABÉTH</div>
-        <p class="subtitle">IMPRACTICAL DEVELOPER</p>
-      </div>
-      <div class="scanlines"></div>
+        <div class="glow">Justin Charo</div> */}
+      <p class="subtitle">dev probs</p>
+
+      {/* <div class="scanlines"></div> */}
     </>
   );
 }

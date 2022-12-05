@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // get our fontawesome imports
 import "@fortawesome/free-solid-svg-icons";
-
+import Freetiles from "./FreeTiles";
 function App() {
   const [navToggle, setavToggle] = useState(false);
   const toggleNav = () => {
@@ -51,10 +51,12 @@ function App() {
             </div>
             <div className="menu-item"> Links</div>
           </div>
-
+          <p class="subtitle">dev probs</p>
+          <div class="scanlines"></div>
           <div id="menu-background-pattern"></div>
           <div id="menu-background-image"></div>
         </div>
+        <Freetiles />
       </div>
       <div id="test">
         <button id="nav-toggle" type="button" onClick={toggleNav}>
