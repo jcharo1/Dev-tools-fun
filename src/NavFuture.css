@@ -166,10 +166,10 @@ color: rgb(251, 27, 255);
 
 
   button {
-    width: 600px;
-    height: 600px;
+    /* width: 600px;
+    height: 600px; */
     font-size:30px;
-    color: #fff;
+
     background: none;
     border: none;
     border-radius: 50%; 
