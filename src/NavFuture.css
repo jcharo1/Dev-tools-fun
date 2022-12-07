@@ -168,13 +168,13 @@ color: rgb(251, 27, 255);
   button {
     /* width: 600px;
     height: 600px; */
-    font-size:30px;
+
 
     background: none;
     border: none;
     border-radius: 50%; 
     position: relative;
-    z-index: 1;
+    z-index: 1000;
     transition: .3s;
     cursor: pointer;
   }
@@ -226,16 +226,6 @@ color: rgb(251, 27, 255);
       border: 2px solid #333;
   }
   
-
-  
-  button>img{
-      border-radius: 50%;
-      left: -2px;
-      position: relative;
-      top: 2px;
-      width: 594px;
-      opacity:0.9;
-  }
 
   
   @keyframes glitch-2 {
