@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Outlet, BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "./Home.js";
+import Home from "./Home.js";
 import Page1 from "./Page1.js";
 import Freetiles from "./FreeTiles";
 import "./index.css";
@@ -12,8 +12,8 @@ root.render(
     <div>
       <NavFuture />
       <Routes>
-        <Route path="/" exact element={<App />} />
-        <Route path="/free1" exact element={<Page1 />} />
+        <Route path="/" index element={<Home />} />
+        <Route path="/free" exact element={<Freetiles />} />
 
         <Route path="/Page1" exact element={<Page1 />} />
       </Routes>

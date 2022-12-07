@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./Home.scss";
 import { useEffect } from "react";
 import FutureNav from "./NavFuture";
 function Home() {
@@ -6,13 +6,9 @@ function Home() {
 
   return (
     <div>
-      <div class="container">
-        <h1>
-          UPDOG
-          <small>?</small>
-        </h1>
+      <div class="container-3">
+        <h1>UPDOG0</h1>
       </div>
-      {/* <FutureNav />{" "} */}
     </div>
   );
 }

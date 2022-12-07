@@ -51,12 +51,13 @@ function App() {
             </div>
             <div className="menu-item"> Links</div>
           </div>
-          <p class="subtitle">dev probs</p>
           <div class="scanlines"></div>
           <div id="menu-background-pattern"></div>
           <div id="menu-background-image"></div>
+
+          <p class="subtitle">dev life</p>
+          {/* <Freetiles />{" "} */}
         </div>
-        <Freetiles />
       </div>
       <div id="test">
         <button id="nav-toggle" type="button" onClick={toggleNav}>
