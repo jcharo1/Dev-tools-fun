@@ -112,11 +112,16 @@ function Home() {
         <main>
           <article data-index="0" data-status="active">
             <div
+              id="mycustomhover"
               class="article-image-section article-section"
               style={{
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center center",
+                backgroundSize: "contain",
                 backgroundImage: `url(${genRobot})`,
               }}
             ></div>
+
             <div class="article-description-section article-section">
               <a href="https://bgjar.com/">
                 <h3>Svg Background Generator</h3>
@@ -149,8 +154,12 @@ function Home() {
           </article>
           <article data-index="1" data-status="inactive">
             <div
+              id="mycustomhover"
               class="article-image-section article-section"
               style={{
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center center",
+                backgroundSize: "contain",
                 backgroundImage: `url(${robotTools})`,
               }}
             ></div>
@@ -186,8 +195,12 @@ function Home() {
           </article>
           <article data-index="2" data-status="inactive">
             <div
+              id="mycustomhover"
               class="article-image-section article-section"
               style={{
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center center",
+                backgroundSize: "contain",
                 backgroundImage: `url(${readRobot})`,
               }}
             ></div>
