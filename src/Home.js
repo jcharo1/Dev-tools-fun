@@ -1,15 +1,9 @@
-import "./Home.scss";
 import { useEffect } from "react";
-import FutureNav from "./NavFuture";
-function Home() {
+import Navbar from "./NavFuture";
+function Freetiles() {
   useEffect(() => {}, []);
 
-  return (
-    <div>
-      <div class="container-3">
-        <h1>UPDOG0</h1>
-      </div>
-    </div>
-  );
+  return <>{/* <Navbar></Navbar> */}</>;
 }
-export default Home;
+
+export default Freetiles;

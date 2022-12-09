@@ -44,11 +44,11 @@ function App() {
               </Link>
             </div>
             <div className="menu-item">
-              <Link to="/free" style={{ color: "white" }} onClick={toggleNav}>
-                Music
+              <Link to="/links" style={{ color: "white" }} onClick={toggleNav}>
+                Links
               </Link>
             </div>
-            <div className="menu-item">Links</div>
+            <div className="menu-item">Music</div>
           </div>
           <div class="scanlines"></div>
           <div id="menu-background-pattern"></div>

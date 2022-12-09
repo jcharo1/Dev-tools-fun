@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Outlet, BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home.js";
+import Links from "./Links.js";
 import Page1 from "./Page1.js";
+import Home from "./Home.js";
 import Freetiles from "./FreeTiles";
 import "./index.css";
 import NavFuture from "./NavFuture";
@@ -10,12 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <div>
-      <NavFuture />
       <Routes>
-        <Route path="/" index element={<Home />} />
-        <Route path="/free" exact element={<Freetiles />} />
-
-        <Route path="/Page1" exact element={<Page1 />} />
+        <Route path="/links" index element={<Links />} />
       </Routes>
     </div>
   </BrowserRouter>

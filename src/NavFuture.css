@@ -3,7 +3,7 @@
     background-color: rgb(10, 10, 10);
     height: 100vh;  
     margin: 0px;
-    transition: transform 1000ms cubic-bezier(.13,.53,.38,.97);
+    transition: transform 500ms cubic-bezier(.13,.53,.38,.97);
 
 
   }
@@ -21,7 +21,7 @@
   #menu-items {
     margin-left: clamp(3rem, 20vw, 48rem);
     position: relative;
-    z-index: 2;
+    z-index: 4;
   }
 
 
@@ -30,7 +30,7 @@
 }
 
 #menu > #menu-background-image {
-    background-position: center calc(45% + 5% * var(--active-index, 0));
+    background-position: center calc(55%  * var(--active-index, 0));
 }
 
   
@@ -49,7 +49,7 @@
       background-size 1000ms ease,
       background-position 1000ms ease;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
   }
   
   #menu-background-image {
@@ -58,7 +58,7 @@
     background-size: 120vmax;
     height: 100%;
     left: 0px;  
-    opacity: 0.15;
+    opacity: 1;
     position: absolute;
     top: 0px;
     transition: opacity 800ms ease,
@@ -75,7 +75,7 @@
   
   #menu-items:hover ~ #menu-background-image {
     background-size: 110vmax;
-    opacity: .2;
+    opacity: .9;
   }
   
   #menu-items:hover > .menu-item {
@@ -109,7 +109,7 @@
     width: 3rem;
     position: fixed;
     z-index: 3;
-    left: 90%;
+    left: 50%;
     bottom: 2rem;
     transform: translateX(-50%);
     background-color: rgb(251, 27, 255);
@@ -165,7 +165,7 @@ color: rgb(251, 27, 255);
 
 
 
-  button {
+ #nav-toggle-fix > button {
     /* width: 600px;
     height: 600px; */
 
@@ -174,11 +174,11 @@ color: rgb(251, 27, 255);
     border: none;
     border-radius: 50%; 
     position: relative;
-    z-index: 1000;
+    z-index: 2;
     transition: .3s;
     cursor: pointer;
   }
-  button:before {
+  #nav-toggle-fix > button:before {
     content: "";
     position: absolute;
     inset: -8px;
@@ -197,7 +197,7 @@ color: rgb(251, 27, 255);
     -webkit-mask-composite: xor;
             mask-composite: intersect
   }
-  button:after {
+  #nav-toggle-fix >button:after {
     content: "";
     position: absolute;
     inset: -100px;
@@ -208,20 +208,20 @@ color: rgb(251, 27, 255);
     opacity: .5;
   }
   
-  button:before,
-  button:after {
+  #nav-toggle-fix> button:before,
+  #nav-toggle-fix> button:after {
     transition:.5s, 99999s 99999s transform;
   }
-  button:hover {
+  #nav-toggle-fix > button:hover {
     box-shadow: 0 0 0 1px #666;
   }
   
-  button:hover:before,
-  button:hover:after {
+  #nav-toggle-fix> button:hover:before,
+  #nav-toggle-fix> button:hover:after {
     transform: rotate(36000deg);
     transition: .5s,600s linear transform;
   }
-  button:before {
+ #nav-toggle-fix > button:before {
     background-color: #222;
       border: 2px solid #333;
   }
