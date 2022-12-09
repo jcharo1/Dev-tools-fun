@@ -55,12 +55,15 @@ function Home() {
   const nav = document.querySelector("nav");
 
   const handleNavToggle = () => {
+    let nav = document.querySelector("nav");
+    console.log(nav);
     nav.dataset.transitionable = "true";
 
     nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
   };
 
   window.matchMedia("(max-width: 800px)").onchange = (e) => {
+    let nav = document.querySelector("nav");
     nav.dataset.transitionable = "false";
 
     nav.dataset.toggled = "false";
@@ -69,7 +72,7 @@ function Home() {
 
   return (
     <div>
-      <div className="container-3" style={{ background: "Transparent" }}>
+      <div className="container-3">
         <nav data-toggled="false" data-transitionable="false">
           <div id="nav-logo-section" class="nav-section">
             <a href="/">

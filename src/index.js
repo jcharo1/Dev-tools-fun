@@ -13,6 +13,7 @@ root.render(
     <div>
       <Routes>
         <Route path="/" index element={<Links />} />
+        <Route path="/test" index element={<Home />} />
       </Routes>
     </div>
   </BrowserRouter>
