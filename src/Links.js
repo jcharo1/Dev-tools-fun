@@ -2,6 +2,9 @@ import "./Links.scss";
 import { useEffect } from "react";
 import FutureNav from "./NavFuture";
 import pic from "./img/navmenu.png";
+import readRobot from "./img/read-robot.png";
+import genRobot from "./img/robot-gen.png";
+import robotTools from "./img/robot-tools.png";
 function Home() {
   /* -- Carousel Navigation -- */
 
@@ -108,7 +111,12 @@ function Home() {
 
         <main>
           <article data-index="0" data-status="active">
-            <div class="article-image-section article-section"></div>
+            <div
+              class="article-image-section article-section"
+              style={{
+                backgroundImage: `url(${genRobot})`,
+              }}
+            ></div>
             <div class="article-description-section article-section">
               <a href="https://bgjar.com/">
                 <h3>Svg Background Generator</h3>
@@ -120,7 +128,7 @@ function Home() {
             </div>
             <div class="article-title-section article-section">
               <h2>CSS Generators</h2>
-              <i class="fa fa-plus"></i>
+              {/* <i class="fa fa-plus"></i> */}
             </div>
             <div class="article-nav-section article-section">
               <button
@@ -140,15 +148,24 @@ function Home() {
             </div>
           </article>
           <article data-index="1" data-status="inactive">
-            <div class="article-image-section article-section"></div>
+            <div
+              class="article-image-section article-section"
+              style={{
+                backgroundImage: `url(${robotTools})`,
+              }}
+            ></div>
             <div class="article-description-section article-section">
               <a href="https://imagecolorpicker.com/color-code/8b0000">
-                Color Combos
+                <h3> Color Combos</h3>
+              </a>
+              <br></br>
+              <a href="https://pixlr.com/remove-background/">
+                <h3>BG Remover</h3>
               </a>
             </div>
             <div class="article-title-section article-section">
               <h2>CSS Color Tools</h2>
-              <i class="fa fa-plus"></i>
+              {/* <i class="fa fa-plus"></i> */}
             </div>
             <div class="article-nav-section article-section">
               <button
@@ -168,24 +185,32 @@ function Home() {
             </div>
           </article>
           <article data-index="2" data-status="inactive">
-            <div class="article-image-section article-section"></div>
+            <div
+              class="article-image-section article-section"
+              style={{
+                backgroundImage: `url(${readRobot})`,
+              }}
+            ></div>
             <div class="article-description-section article-section">
               <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">
                 <h3>CSS Values and Units</h3>
               </a>
+              <br></br>
               <a href="https://css-tricks.com/a-complete-guide-to-css-media-queries/">
                 <h3>CSS Media Queries</h3>
               </a>{" "}
+              <br></br>
               <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">
-                <h3>Z-index</h3>
+                <h3>Z-Index</h3>
               </a>
+              <br></br>
               <a href="https://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/">
                 <h3>Grid Min-max</h3>
               </a>
             </div>
             <div class="article-title-section article-section">
               <h2>CSS Articles</h2>
-              <i class="fa fa-plus"></i>
+              {/* <i class="fa fa-plus"></i> */}
             </div>
             <div class="article-nav-section article-section">
               <button

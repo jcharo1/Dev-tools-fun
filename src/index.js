@@ -12,7 +12,7 @@ root.render(
   <BrowserRouter>
     <div>
       <Routes>
-        <Route path="/links" index element={<Links />} />
+        <Route path="/" index element={<Links />} />
       </Routes>
     </div>
   </BrowserRouter>
