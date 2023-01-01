@@ -1,3 +1,4 @@
+const longLiveTheFunForLearning = "lets go 2023"
 import "./FreeTiles.scss";
 import { useEffect } from "react";
 
