@@ -7,15 +7,21 @@ import Home from "./Home.js";
 import Freetiles from "./FreeTiles";
 import "./index.css";
 import NavFuture from "./NavFuture";
+import { ToastProvider } from "./ToastProvider";
+import "./Toast.scss";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <div>
-      <Routes>
-        <Route path="/" index element={<Links />} />
-        <Route path="/test" index element={<Home />} />
-      </Routes>
-    </div>
+    <ToastProvider>
+      <div>
+        <Routes>
+          <Route path="/" index element={<Links />} />
+          <Route path="/test" index element={<NavFuture />} />
+          <Route path="/toast" index element={<Page1 />} />
+        </Routes>
+      </div>
+    </ToastProvider>
   </BrowserRouter>
 );
 
