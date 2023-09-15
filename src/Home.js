@@ -1,11 +1,17 @@
 import { useEffect } from "react";
 import "./Home.scss";
+import { useToast } from "./ToastProvider";
+
 function Freetiles() {
   useEffect(() => {}, []);
+  const { addToast } = useToast();
 
+  const handleClick = () => {
+    addToast("This is a toast message!");
+  };
   return (
     <div style={{ background: "white" }}>
-      {" "}
+      <button onClick={handleClick}>Show Toast</button>{" "}
       <div class="buttons">
         <button class="btn lg red neu">
           <i class="fa fa-heart"></i>

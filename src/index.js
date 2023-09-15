@@ -19,6 +19,7 @@ root.render(
           <Route path="/" index element={<Links />} />
           <Route path="/test" index element={<NavFuture />} />
           <Route path="/toast" index element={<Page1 />} />
+          <Route path="/home" index element={<Home />} />
         </Routes>
       </div>
     </ToastProvider>

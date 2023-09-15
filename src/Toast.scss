@@ -1,23 +1,75 @@
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
 .toast-container {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 9999;
+  perspective: 1000px;
+
+  &:hover .toast {
+    transform: translateY(0);
+    &:nth-child(1) {
+      z-index: 3;
+      transform: translateY(0) scale(1);
+    }
+
+    &:nth-child(2) {
+      z-index: 2;
+      transform: translateY(calc(-1 * 130%)) scale(1);
+    }
+
+    &:nth-child(3) {
+      z-index: 1;
+      transform: translateY(calc(-2 * 130%)) scale(1);
+    }
+  }
 }
 
 .toast {
-  background-color: #333;
-  color: white;
-  padding: 15px;
-  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: aqua;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
 
+  &.show {
+    opacity: 1;
+  }
+
+  &:nth-child(1) {
+    z-index: 3;
+    transform: translateY(0) scale(1);
+  }
+
+  &:nth-child(2) {
+    z-index: 2;
+    transform: translateY(calc(-1 * 10px)) scale(0.9);
+  }
+
+  &:nth-child(3) {
+    z-index: 1;
+    transform: translateY(calc(-2 * 10px)) scale(0.8);
+  }
   button {
     background: none;
+    color: inherit;
     border: none;
-    color: white;
-    margin-left: 10px;
+    padding: 0;
+    font: inherit;
     cursor: pointer;
+    outline: inherit;
+    width: 20px;
+    height: 15px;
+
+    background-color: transparent;
   }
 }

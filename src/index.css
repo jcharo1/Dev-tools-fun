@@ -1,12 +1,14 @@
-body{
-    background-color: rgb(10, 10, 10);
-    height: 100vh;  
-    margin: 0px;
-    overflow: hidden;
-  }
- 
- div {
-    font-family: "Rubik", sans-serif ;
-    font-weight: normal;
-    font-style: normal;
- }
+body {
+  background-color: rgb(10, 10, 10);
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+div {
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
