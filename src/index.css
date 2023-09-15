@@ -1,8 +1,9 @@
 body {
-  background-color: rgb(10, 10, 10);
-  height: 100vh;
+  background-color: rgb(60, 60, 60);
+  height: 600vh;
   margin: 0px;
-  overflow: hidden;
+  overflow-y: auto;
+  color: white;
   font-family: "Bebas Neue", sans-serif;
 }
 
